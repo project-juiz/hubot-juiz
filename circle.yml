@@ -8,3 +8,4 @@ machine:
 test:
   override:
       - cd ./node_modules/hubot/ && make test
+      - cd ./node_modules/hubot-google-images/ && make test
