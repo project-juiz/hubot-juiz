@@ -1,0 +1,10 @@
+---
+# https://circleci.com/docs/manually
+
+machine:
+  timezone:
+      Asia/Tokyo
+
+test:
+  override:
+      - cd ./node_modules/hubot/ && make test
