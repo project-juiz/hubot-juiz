@@ -11,6 +11,6 @@ test:
 
 deployment:
   prod:
-      branch: master
-          heroku:
-                appname: hubot-juiz
+    branch: master
+    heroku:
+      appname: hubot-juiz
