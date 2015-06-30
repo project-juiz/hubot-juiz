@@ -43,7 +43,7 @@ module.exports = (robot) ->
   robot.hear /juiz(.*)教えて/, (res) ->
     res.reply res.random teachMeReplies
   
-  robot.hear /ドラゴン/, (res) ->
+  robot.hear /^ドラゴン$/, (res) ->
     res.send "ライダー"
 
   #
