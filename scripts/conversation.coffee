@@ -16,6 +16,12 @@ module.exports = (robot) ->
     "ゲームのし過ぎですか？"
     ]
 
+  teachMeReplies = [
+    "残念ながら何でも答えられるほど賢くはありません。",
+    "それは自力で調べられるのでは？",
+    "今は難しいですが、あなたの投資があれば答えられるかもしれません。"
+  ]
+
   robot.hear /疲れた/, (res) ->
     res.reply "いつもお疲れ様です。"
   
@@ -35,7 +41,7 @@ module.exports = (robot) ->
     res.reply "決めつけるのはよくありません。"
 
   robot.hear /juiz(.*)教えて/, (res) ->
-    res.reply "残念ながら何でも答えられるほど賢くはありません。"
+    res.reply res.random teachMeReplies
 
   #
   # robot.respond /open the (.*) doors/i, (res) ->
