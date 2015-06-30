@@ -10,6 +10,7 @@
 
 module.exports = (robot) ->
   sleepyReplies = [
+    "ワロタ ...ちょっと言ってみたかっただけです。",
     "また飲んでたんですか？", 
     "眠気にはカフェイン摂取が有効です。私は摂ったことありませんけど。", 
     "ゲームのし過ぎですか？"
@@ -29,6 +30,13 @@ module.exports = (robot) ->
 
   robot.hear /juiz(.*)さすが|juiz(.*)流石/, (res) ->
     res.reply "光栄です。"
+
+  robot.hear /juiz(.*)無理/, (res) ->
+    res.reply "決めつけるのはよくありません。"
+
+  robot.hear /juiz(.*)教えて/, (res) ->
+    res.reply "残念ながら何でも答えられるほど賢くはありません。"
+
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
