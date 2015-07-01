@@ -45,6 +45,9 @@ module.exports = (robot) ->
   
   robot.hear /^ドラゴン$/, (res) ->
     res.send "ライダー"
+ 
+  robot.hear /7月7日|７月７日|7¥/7/, (res) ->
+    res.reply "7月7日と言えば七夕ですね。笹の葉、短冊、天の川。晴れると良いのですが。"
 
   #
   # robot.respond /open the (.*) doors/i, (res) ->
