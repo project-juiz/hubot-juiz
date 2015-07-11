@@ -1,4 +1,5 @@
 [
+  "hubot-bijin-tokei",
   "hubot-diagnostics",
   "hubot-help",
   "hubot-heroku-keepalive",
