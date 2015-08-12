@@ -44,6 +44,9 @@ module.exports = (robot) ->
     res.reply res.random teachMeReplies
   
   robot.hear /^ドラゴン$/, (res) ->
+    res.send "ライダーだった"
+
+   robot.hear /^グノシー$/, (res) ->
     res.send "ライダー"
  
   robot.hear /7月7日|７月７日|7\/7/, (res) ->
