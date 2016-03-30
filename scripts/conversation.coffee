@@ -46,9 +46,8 @@ module.exports = (robot) ->
   robot.hear /^ドラゴン$/, (res) ->
     res.send "ライダーだった"
 
-   robot.hear /^グノシー$/, (res) ->
+  robot.hear /^グノシー$/, (res) ->
     res.send "ライダー"
- 
 
   robot.hear /^マカオ$/, (res) ->
     res.send "フジタ"
