@@ -29,6 +29,9 @@ module.exports = (robot) ->
   robot.hear /飲みにいく|飲みたい|だるま/, (res) ->
     res.reply "お酒が好きですねぇ。"
 
+  robot.hear /マッコリ/, (res) ->
+    res.reply "マッコリと言えば北川氏ですね。両手にマッコリ！...なんちゃって。"
+
   robot.hear /眠い|ねむい/, (res) ->
     res.reply res.random sleepyReplies
 
