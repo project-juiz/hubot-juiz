@@ -53,7 +53,7 @@ module.exports = (robot) ->
   robot.hear /^グノシー$/, (res) ->
     res.send "ライダー"
 
-  robot.hear /^マカオ$/, (res) ->
+  robot.hear /^マカオ$|^ゴーゴーバー/, (res) ->
     res.send "フジタ"
  
   robot.hear /7月7日|７月７日|7\/7/, (res) ->
