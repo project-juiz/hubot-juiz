@@ -9,7 +9,7 @@ module.exports = (robot) ->
   url = "https://chatbot-api.userlocal.jp/api/chat"
   api_key = process.env.HUBOT_USERLOCAL_API_KEY
 
-  robot.respond /(?:juiz\s+)(.*)/i, (msg) ->
+  robot.hear /(juiz\s+)(.*)/, (msg) ->
 
     message = msg.match[2]
     params = {
@@ -18,6 +18,6 @@ module.exports = (robot) ->
     }
 
     robot.http(url).query(params).get() (err, res, body) ->
-      return res.send "Encountered an error: #{err}" if err
+      console.log "Encountered an error: #{err}" if err
       body = JSON.parse(body)
-      msg.send "#{body.result}"
+      msg.reply "#{body.result}"
