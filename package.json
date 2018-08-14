@@ -6,7 +6,7 @@
   "description": "A helpful AI robot from Eden of The East",
   "dependencies": {
     "coveralls": "^2.11.2",
-    "hubot": "^2.13.2",
+    "hubot": "^2.19.0",
     "hubot-bijin-tokei": "succi0303/hubot-bijin-tokei",
     "hubot-choice": "bouzuya/hubot-choice",
     "hubot-diagnostics": "0.0.1",
@@ -27,6 +27,6 @@
     "mocha-lcov-reporter": "0.0.2"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "10.x.x"
   }
 }
