@@ -59,6 +59,9 @@ module.exports = (robot) ->
   robot.hear /7月7日|７月７日|7\/7/, (res) ->
     res.reply "7月7日と言えば七夕ですね。笹の葉、短冊、天の川。晴れると良いのですが。"
 
+  robot.hear /e\+|eplus|eプラス/, (res) ->
+    res.reply "e+ は外れたのを確認してから時間差でメールでも報告してくることが知られています。"
+
   #
   # robot.respond /open the (.*) doors/i, (res) ->
   #   doorType = res.match[1]
