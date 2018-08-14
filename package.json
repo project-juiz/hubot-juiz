@@ -27,6 +27,6 @@
     "mocha-lcov-reporter": "0.0.2"
   },
   "engines": {
-    "node": "10.x.x"
+    "node": "10.6.0"
   }
 }
