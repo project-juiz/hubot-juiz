@@ -93,6 +93,8 @@ jobs:
     - store_artifacts:
         path: /tmp/circleci-test-results
   deploy:
+    docker:
+     - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
     steps:
      - checkout
      - run:
